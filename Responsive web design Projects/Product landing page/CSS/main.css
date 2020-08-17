@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-column-gap: 10px;
+  background-color: #8BBF6A;
+  border-bottom: 2px solid green;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.logo img{
+  height: 84px;
+  width: 80px;
+}
+
+.logo h2 {
+  padding: 5px;
+}
+
+#nav-bar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  height: 100%;
+  font-size: 1.15em;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.anchor { padding-top: 100px; }
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://e3.365dm.com/18/06/1096x616/skynews-nike-nigera_4326134.jpg?20180601224151");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #8BBF6A;
+  height: 100vh;
+}
+
+#hero h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: rgba(139,191,106,0.2);
+  text-align: center;
+  width: 90%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: rgba(139,191,106,0.2);
+}
+
+#email {
+  width: 60%;
+  height: 30px;
+  margin: 10px;
+  border: 2px solid green;
+}
+
+#submit {
+  padding: 10px;
+  font-size: 1.25em;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+
+#submit:hover {
+  background-color: #8BBF6A;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://versus.uk.com/wp-content/uploads/2018/02/Nike-News-Football-Soccer-Nigeria-National-Team-Kit-4_77368.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D3E4DE;
+  color: #D3E4DE;
+}
+
+#about h2 {
+  text-align: center;
+  width: 90%;
+  background-color: rgba(0,0,0,0.5);
+  text-decoration: underline;
+}
+
+#about p {
+  text-align: justify;
+  padding: 10px;
+  width: 90%;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+#video {
+  max-width: 560px;
+}
+
+#benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*background: url("http://img2.thejournal.ie/inline/3839690/original?width=630&version=3839690");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background:
+linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+background-size: 100px 100px;
+background-color: #8BBF6A;
+color: black;
+font-weight: bold;
+}
+
+#benefits h2 {
+  text-align: center;
+  width: 90%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+#benefit-card-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.icon {
+  text-align: center;
+  margin: 5px;
+  width: 100px;
+  color: green;
+}
+
+.benefit-card .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:
+linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+background-size: 100px 100px;
+  background-color: #F5F5F5;
+}
+
+#product-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+
+}
+
+.product-card {
+  margin: 15px;
+  text-align: center;
+  border: 2px solid green;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #8BBF6A;
+  background-color: white;
+}
+
+.product-image img{
+  width: 250px;
+  height: 180px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 1.25em;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #8BBF6A;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8BBF6A;
+  color: white;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+
+footer p {
+   font-weight: bold;
+}
+
+.footer-link {
+  padding: 0 15px 0 15px;
+}
+
+.footer-link:link,
+.footer-link:active,
+.footer-link:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.footer-link:hover {
+  color: #0f73c4;
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo img{
+    display: none;
+  }
+
+  #nav-bar ul {
+    justify-content: center;
+  }
+
+  #video {
+    max-width: 310px;
+  }
+
+  #products {
+    font-size: 0.9em;
+  }
+
+  .product-card {
+    margin: 5px;
+    text-align: center;
+  }
+
+  .product-name h3, .product-price{
+    font-size: 0.8em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
+
+  .product-image img{
+    width: 100px;
+    height: 70px;
+  }
+
+}
+
+@media only screen and (max-height: 610px) {
+
+  #product-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
